@@ -1,8 +1,6 @@
 import { defineConfig } from 'astro/config';
-import cloudflare from '@astrojs/cloudflare';
-
-// https://astro.build/config
+import netlify from '@astrojs/netlify/edge-functions';
 export default defineConfig({
-  output: 'server',
-  adapter: cloudflare()
+  output: "server",
+  adapter: netlify(),
 });
